@@ -393,3 +393,60 @@ To https://github.com/alain-kubwayo/the-gym-git-exercise.git
    dac0e64..02ab76b  ft/faq-page -> ft/faq-page
 ➜  the-gym-git-exercise git:(ft/faq-page) 
 ```
+
+### Exercise 2
+
+```bash
+➜  the-gym-git-exercise git:(ft/faq-page) git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+➜  the-gym-git-exercise git:(ft/home-page-redesign) git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+➜  the-gym-git-exercise git:(main) git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  the-gym-git-exercise git:(main) ✗ git add home.html
+➜  the-gym-git-exercise git:(main) ✗ git commit -m "feat: add content to the homepage"
+[main faedf0c] feat: add content to the homepage
+ 1 file changed, 1 insertion(+)
+➜  the-gym-git-exercise git:(main) git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+➜  the-gym-git-exercise git:(ft/home-page-redesign) git log
+➜  the-gym-git-exercise git:(ft/home-page-redesign) git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+➜  the-gym-git-exercise git:(ft/home-page-redesign) git status
+On branch ft/home-page-redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  the-gym-git-exercise git:(ft/home-page-redesign) ✗ git add home.html
+➜  the-gym-git-exercise git:(ft/home-page-redesign) ✗ git commit -m "feat: add link"            
+[ft/home-page-redesign 9194555] feat: add link
+ 1 file changed, 1 insertion(+)
+➜  the-gym-git-exercise git:(ft/home-page-redesign) git push origin ft/home-page-redesign
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (17/17), 1.89 KiB | 1.89 MiB/s, done.
+Total 17 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), done.
+remote: 
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/alain-kubwayo/the-gym-git-exercise/pull/new/ft/home-page-redesign
+remote: 
+To https://github.com/alain-kubwayo/the-gym-git-exercise.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+➜  the-gym-git-exercise git:(ft/home-page-redesign) 
+
+```
