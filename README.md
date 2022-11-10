@@ -178,6 +178,7 @@ HEAD is now at d1c459f add home and about pages
 
 ### Exercise 2
 
+```bash
 ➜  the-gym-git-exercise git:(main) ✗ git checkout -b ft/service-redesign
 Switched to a new branch 'ft/service-redesign'
 ➜  the-gym-git-exercise git:(ft/service-redesign) ✗ git status
@@ -264,3 +265,4 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/alain-kubwayo/the-gym-git-exercise.git
    450d331..4b86d54  ft/service-redesign -> ft/service-redesign
 ➜  the-gym-git-exercise git:(ft/service-redesign) 
+```
