@@ -266,3 +266,130 @@ To https://github.com/alain-kubwayo/the-gym-git-exercise.git
    450d331..4b86d54  ft/service-redesign -> ft/service-redesign
 ➜  the-gym-git-exercise git:(ft/service-redesign) 
 ```
+
+## Bundle 3
+
+### Exercise 1
+
+```bash
+➜  the-gym-git-exercise git:(main) git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+➜  the-gym-git-exercise git:(ft/team-page) git status
+On branch ft/team-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  the-gym-git-exercise git:(ft/team-page) ✗ git add team.html
+➜  the-gym-git-exercise git:(ft/team-page) ✗ git status
+On branch ft/team-page
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+➜  the-gym-git-exercise git:(ft/team-page) ✗ git commit -m "feat: add team page"
+[ft/team-page 5698ea9] feat: add team page
+ 1 file changed, 9 insertions(+)
+ create mode 100644 team.html
+➜  the-gym-git-exercise git:(ft/team-page) git push origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 368 bytes | 368.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/alain-kubwayo/the-gym-git-exercise/pull/new/ft/team-page
+remote: 
+To https://github.com/alain-kubwayo/the-gym-git-exercise.git
+ * [new branch]      ft/team-page -> ft/team-page
+➜  the-gym-git-exercise git:(ft/team-page) git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+➜  the-gym-git-exercise git:(main) git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+➜  the-gym-git-exercise git:(ft/contact-page) git checkout ft/team-page
+Switched to branch 'ft/team-page'
+➜  the-gym-git-exercise git:(ft/team-page) git log
+➜  the-gym-git-exercise git:(ft/team-page) git log
+➜  the-gym-git-exercise git:(ft/team-page) git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+➜  the-gym-git-exercise git:(ft/contact-page) git cherry-pick 5698ea9d9df23c0a14128d6db4750a5e51d52ed8
+[ft/contact-page 4b9a6ab] feat: add team page
+ Date: Thu Nov 10 16:18:24 2022 +0200
+ 1 file changed, 9 insertions(+)
+ create mode 100644 team.html
+➜  the-gym-git-exercise git:(ft/contact-page) git status
+On branch ft/contact-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        contact.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  the-gym-git-exercise git:(ft/contact-page) ✗ git add contact.html
+➜  the-gym-git-exercise git:(ft/contact-page) ✗ git commit -m "feat: add contact page"
+[ft/contact-page f57ad6e] feat: add contact page
+ 1 file changed, 9 insertions(+)
+ create mode 100644 contact.html
+➜  the-gym-git-exercise git:(ft/contact-page) git push origin ft/contact-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 632 bytes | 632.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/alain-kubwayo/the-gym-git-exercise/pull/new/ft/contact-page
+remote: 
+To https://github.com/alain-kubwayo/the-gym-git-exercise.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+➜  the-gym-git-exercise git:(ft/contact-page) git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+➜  the-gym-git-exercise git:(ft/faq-page) git status
+On branch ft/faq-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        faq.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  the-gym-git-exercise git:(ft/faq-page) ✗ git add faq.html
+➜  the-gym-git-exercise git:(ft/faq-page) ✗ git commit -m "feat: add faq page"
+[ft/faq-page dac0e64] feat: add faq page
+ 1 file changed, 9 insertions(+)
+ create mode 100644 faq.html
+➜  the-gym-git-exercise git:(ft/faq-page) git push origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 387 bytes | 387.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/alain-kubwayo/the-gym-git-exercise/pull/new/ft/faq-page
+remote: 
+To https://github.com/alain-kubwayo/the-gym-git-exercise.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+➜  the-gym-git-exercise git:(ft/faq-page) git log
+➜  the-gym-git-exercise git:(ft/faq-page) git revert 4b9a6abe6bbeba06c3a663045c7685c33191e4c1
+[ft/faq-page 02ab76b] Revert "feat: add team page"
+ 1 file changed, 9 deletions(-)
+ delete mode 100644 team.html
+➜  the-gym-git-exercise git:(ft/faq-page) git push origin ft/faq-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 273 bytes | 273.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/alain-kubwayo/the-gym-git-exercise.git
+   dac0e64..02ab76b  ft/faq-page -> ft/faq-page
+➜  the-gym-git-exercise git:(ft/faq-page) 
+```
