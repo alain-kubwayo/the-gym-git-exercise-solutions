@@ -151,8 +151,6 @@ Changes to be committed:
  create mode 100644 about.html
  create mode 100644 home.html
 ➜  the-gym-git-exercises git:(dev) git push origin dev
-fatal: unable to access 'https://github.com/alain-kubwayo/the-gym-git-exercise-solutions.git/': Could not resolve host: github.com
-➜  the-gym-git-exercises git:(dev) git push origin dev
 Enumerating objects: 5, done.
 Counting objects: 100% (5/5), done.
 Delta compression using up to 8 threads
@@ -176,3 +174,93 @@ Dropped refs/stash@{0} (5518c343ad8310bf7168ce5b462d333122fa66f8)
 HEAD is now at d1c459f add home and about pages
 ➜  the-gym-git-exercises git:(dev) ✗ 
 ```
+## Bundle 2
+
+### Exercise 2
+
+➜  the-gym-git-exercise git:(main) ✗ git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+➜  the-gym-git-exercise git:(ft/service-redesign) ✗ git status
+On branch ft/service-redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  the-gym-git-exercise git:(ft/service-redesign) ✗ git add .
+➜  the-gym-git-exercise git:(ft/service-redesign) ✗ git commit -m "feat: add list of services"
+[ft/service-redesign 450d331] feat: add list of services
+ 1 file changed, 5 insertions(+)
+➜  the-gym-git-exercise git:(ft/service-redesign) git push origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 407 bytes | 407.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/alain-kubwayo/the-gym-git-exercise/pull/new/ft/service-redesign
+remote: 
+To https://github.com/alain-kubwayo/the-gym-git-exercise.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+➜  the-gym-git-exercise git:(ft/service-redesign) git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+➜  the-gym-git-exercise git:(main) git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  the-gym-git-exercise git:(main) ✗ git add .
+➜  the-gym-git-exercise git:(main) ✗ git commit -m "feat: add old services"
+[main 171d685] feat: add old services
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+➜  the-gym-git-exercise git:(main) git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 389 bytes | 389.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/alain-kubwayo/the-gym-git-exercise.git
+   6391ea2..171d685  main -> main
+➜  the-gym-git-exercise git:(main) git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+➜  the-gym-git-exercise git:(ft/service-redesign) git merge main
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+➜  the-gym-git-exercise git:(ft/service-redesign) ✗ git status
+On branch ft/service-redesign
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  the-gym-git-exercise git:(ft/service-redesign) ✗ git add services.html
+➜  the-gym-git-exercise git:(ft/service-redesign) ✗ git commit
+[ft/service-redesign 4b86d54] Merge branch 'main' into ft/service-redesign
+➜  the-gym-git-exercise git:(ft/service-redesign) git push origin ft/service-redesign 
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 412 bytes | 412.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/alain-kubwayo/the-gym-git-exercise.git
+   450d331..4b86d54  ft/service-redesign -> ft/service-redesign
+➜  the-gym-git-exercise git:(ft/service-redesign) 
