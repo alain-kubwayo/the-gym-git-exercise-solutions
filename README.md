@@ -502,3 +502,78 @@ To https://github.com/alain-kubwayo/the-gym-git-exercise-clone.git
 ➜  the-gym-git-exercise git:(main) 
 ```
 
+### Exercise 2
+
+```bash
+➜  the-gym-git-exercise git:(main) git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+➜  the-gym-git-exercise git:(ft/footer) git status
+On branch ft/footer
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        footer.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  the-gym-git-exercise git:(ft/footer) ✗  git add .
+➜  the-gym-git-exercise git:(ft/footer) ✗ git commit -m "feat: add footer"
+[ft/footer f4347f8] feat: add footer
+ 1 file changed, 12 insertions(+)
+ create mode 100644 footer.html
+➜  the-gym-git-exercise git:(ft/footer) git add --all
+➜  the-gym-git-exercise git:(ft/footer) ✗ git commit -m "feat: add footer content"
+[ft/footer 36e471e] feat: add footer content
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  the-gym-git-exercise git:(ft/footer) git push origin ft/footer
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 753 bytes | 753.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/alain-kubwayo/the-gym-git-exercise/pull/new/ft/footer
+remote: 
+To https://github.com/alain-kubwayo/the-gym-git-exercise.git
+ * [new branch]      ft/footer -> ft/footer
+➜  the-gym-git-exercise git:(ft/footer) git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+➜  the-gym-git-exercise git:(main) git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+➜  the-gym-git-exercise git:(ft/squashing) git merge --squash ft/footer
+Updating 4157813..36e471e
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.html | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+ create mode 100644 footer.html
+➜  the-gym-git-exercise git:(ft/squashing) ✗ git log
+➜  the-gym-git-exercise git:(ft/squashing) ✗ git status
+On branch ft/squashing
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   footer.html
+
+➜  the-gym-git-exercise git:(ft/squashing) ✗ git commit -m "footer changes squashing"
+[ft/squashing d93e59e] footer changes squashing
+ 1 file changed, 12 insertions(+)
+ create mode 100644 footer.html
+➜  the-gym-git-exercise git:(ft/squashing) git push origin ft/squashing
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 490 bytes | 490.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/alain-kubwayo/the-gym-git-exercise/pull/new/ft/squashing
+remote: 
+To https://github.com/alain-kubwayo/the-gym-git-exercise.git
+ * [new branch]      ft/squashing -> ft/squashing
+➜  the-gym-git-exercise git:(ft/squashing) 
+```
+
