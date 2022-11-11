@@ -577,3 +577,8 @@ To https://github.com/alain-kubwayo/the-gym-git-exercise.git
 ➜  the-gym-git-exercise git:(ft/squashing) 
 ```
 
+## Bundle 5
+
+### Exercise 1
+
+[Link to GitHub Pages](https://alain-kubwayo.github.io/the-gym-git-exercise/)
