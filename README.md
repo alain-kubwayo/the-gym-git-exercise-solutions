@@ -450,3 +450,55 @@ To https://github.com/alain-kubwayo/the-gym-git-exercise.git
 ➜  the-gym-git-exercise git:(ft/home-page-redesign) 
 
 ```
+
+## Bundle 4
+
+### Exercise 1
+
+```bash
+➜  the-gym-git-exercise git:(ft/home-page-redesign) git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+➜  the-gym-git-exercise git:(main) git remote add git-copy https://github.com/alain-kubwayo/the-gym-git-exercise-clone.git
+➜  the-gym-git-exercise git:(main) git remote
+git-copy
+origin
+➜  the-gym-git-exercise git:(main) git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  the-gym-git-exercise git:(main) ✗ git add home.html
+➜  the-gym-git-exercise git:(main) ✗ git commit -m "feat: add second paragraph to home page"
+[main 4157813] feat: add second paragraph to home page
+ 1 file changed, 1 insertion(+)
+➜  the-gym-git-exercise git:(main) git push origin     
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 481 bytes | 481.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/alain-kubwayo/the-gym-git-exercise.git
+   171d685..4157813  main -> main
+➜  the-gym-git-exercise git:(main) git push git-copy
+Enumerating objects: 35, done.
+Counting objects: 100% (35/35), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (27/27), done.
+Writing objects: 100% (35/35), 7.46 KiB | 7.46 MiB/s, done.
+Total 35 (delta 10), reused 25 (delta 6), pack-reused 0
+remote: Resolving deltas: 100% (10/10), done.
+To https://github.com/alain-kubwayo/the-gym-git-exercise-clone.git
+ * [new branch]      main -> main
+➜  the-gym-git-exercise git:(main) 
+```
+
